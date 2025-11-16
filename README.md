@@ -6,12 +6,15 @@
 
 **Comprehensive online educational platform for gastric cancer surgery training**
 
+[![Build Status](https://github.com/Serg2206/gastric-surgery-course/actions/workflows/deploy.yml/badge.svg)](https://github.com/Serg2206/gastric-surgery-course/actions)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-38bdf8)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/Node-18+-green)](https://nodejs.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[Live Demo](https://ssvproff.abacusai.app) · [Report Bug](https://github.com/Serg2206/gastric-surgery-course/issues) · [Request Feature](https://github.com/Serg2206/gastric-surgery-course/issues)
+[Live Demo](https://ssvproff.abacusai.app) · [Documentation](https://serg2206.github.io/gastric-surgery-course/) · [Report Bug](https://github.com/Serg2206/gastric-surgery-course/issues) · [Request Feature](https://github.com/Serg2206/gastric-surgery-course/issues)
 
 </div>
 
@@ -252,17 +255,50 @@ yarn build
 yarn start
 ```
 
+### GitHub Pages Documentation
+
+The project includes a documentation site hosted on GitHub Pages:
+- **Documentation URL**: [https://serg2206.github.io/gastric-surgery-course/](https://serg2206.github.io/gastric-surgery-course/)
+- **Source**: `docs/index.html`
+
+To enable GitHub Pages:
+1. Go to repository Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `main` → `/docs` folder
+4. Save
+
+### CI/CD with GitHub Actions
+
+The repository includes automated workflows in `.github/workflows/deploy.yml`:
+- ✅ Automated testing on pull requests
+- ✅ Build verification on push to main
+- ✅ Deployment notifications
+- ✅ Code quality checks
+
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions from the community! Whether you're fixing bugs, adding features, or improving documentation, your help is appreciated.
+
+Please read our [Contributing Guide](CONTRIBUTING.md) for detailed information on:
+
+- 📋 Code of conduct
+- 🚀 Setting up your development environment
+- 💻 Development workflow
+- 📝 Code style guidelines
+- 🔄 Pull request process
+- 🐛 Bug reporting
+
+**Quick Start for Contributors:**
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+For more details, see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 

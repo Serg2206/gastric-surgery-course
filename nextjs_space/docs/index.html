@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSV Наука - Документация</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card li:last-child {
+            border-bottom: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #e0e7ff;
+            color: #667eea;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 SSV Наука</h1>
+            <p class="subtitle">Образовательная платформа для хирургов</p>
+            <p style="margin-top: 20px; color: #888;">Интерактивное онлайн-обучение хирургии рака желудка</p>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="icon">📚</div>
+                <h2>О платформе</h2>
+                <p>Современная образовательная платформа для обучения хирургов методам лечения рака желудка с использованием интерактивных модулей и 3D визуализации.</p>
+                <ul>
+                    <li>✅ 10 образовательных модулей</li>
+                    <li>✅ Интерактивные 3D модели</li>
+                    <li>✅ Видео симуляции операций</li>
+                    <li>✅ Тесты и проверка знаний</li>
+                </ul>
+                <a href="https://ssvproff.abacusai.app" class="btn" target="_blank">Перейти к платформе →</a>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h2>Быстрый старт</h2>
+                <p>Для разработчиков: инструкции по установке и запуску проекта локально.</p>
+                <pre style="background: #f5f5f5; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.9rem;">
+git clone https://github.com/Serg2206/gastric-surgery-course.git
+cd gastric-surgery-course/nextjs_space
+yarn install
+yarn dev
+                </pre>
+                <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">Сервер запустится на <code>localhost:3000</code></p>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🛠️</div>
+                <h2>Технологии</h2>
+                <p>Стек современных технологий для создания быстрого и масштабируемого приложения.</p>
+                <div class="tech-stack">
+                    <span class="badge">Next.js 14</span>
+                    <span class="badge">React 18</span>
+                    <span class="badge">TypeScript</span>
+                    <span class="badge">Prisma</span>
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">NextAuth</span>
+                    <span class="badge">Tailwind CSS</span>
+                    <span class="badge">Plotly.js</span>
+                </div>
+                <a href="https://github.com/Serg2206/gastric-surgery-course#readme" class="btn" target="_blank" style="margin-top: 20px;">Подробнее →</a>
+            </div>
+            
+            <div class="card">
+                <div class="icon">📖</div>
+                <h2>Модули обучения</h2>
+                <p>Программа курса включает комплексное изучение всех аспектов хирургии рака желудка.</p>
+                <ul>
+                    <li>1️⃣ Молекулярная биология</li>
+                    <li>2️⃣ Диагностика и стадирование</li>
+                    <li>3️⃣ Хирургические техники</li>
+                    <li>4️⃣ Лимфодиссекция D1/D2</li>
+                    <li>5️⃣ Реконструктивная хирургия</li>
+                    <li>6️⃣ Робот-ассистированные операции</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h2>Вклад в проект</h2>
+                <p>Мы приветствуем вклад от сообщества! Прочитайте руководство по внесению изменений.</p>
+                <ul>
+                    <li>🔧 Создание новых интерактивных компонентов</li>
+                    <li>📝 Улучшение документации</li>
+                    <li>🐛 Исправление ошибок</li>
+                    <li>🎨 Улучшение дизайна</li>
+                </ul>
+                <a href="https://github.com/Serg2206/gastric-surgery-course/blob/main/CONTRIBUTING.md" class="btn" target="_blank">Руководство →</a>
+            </div>
+            
+            <div class="card">
+                <div class="icon">📊</div>
+                <h2>API и интеграции</h2>
+                <p>Платформа использует современные API и сервисы для обеспечения функциональности.</p>
+                <ul>
+                    <li>🔐 NextAuth для аутентификации</li>
+                    <li>📈 Google Analytics для аналитики</li>
+                    <li>🗄️ PostgreSQL для хранения данных</li>
+                    <li>☁️ Abacus.AI для хостинга</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p style="font-size: 1.2rem; margin-bottom: 10px;">💻 Создано с использованием Next.js и Abacus.AI</p>
+            <p style="opacity: 0.8;">© 2025 SSV Наука. Лицензия MIT</p>
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/Serg2206/gastric-surgery-course" class="btn" target="_blank">GitHub Repository</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
