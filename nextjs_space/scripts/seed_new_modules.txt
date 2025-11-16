@@ -1,0 +1,151 @@
+    {
+      id: 'module-2',
+      title: 'Диагностика и стадирование',
+      description: 'Современные методы визуализации (КТ, МРТ, ПЭТ-КТ) для точного стадирования рака желудка.',
+      imageUrl: 'https://static.abacusaicdn.net/images/ced14cc7-0ecb-4afa-860b-97f4624dcc5d.png',
+      order: 2,
+      content: {
+        sections: [
+          {
+            id: 'ct-simulator',
+            title: 'Интерактивный КТ-симулятор',
+            type: 'interactive',
+            description: 'Практика интерпретации КТ-снимков'
+          },
+          {
+            id: 'imaging-comparison',
+            title: 'Сравнение методов визуализации',
+            type: 'interactive',
+            description: 'КТ vs МРТ vs ПЭТ-КТ с клиническими кейсами'
+          }
+        ],
+        duration: '2 часа',
+        lessons: 8
+      }
+    },
+    {
+      id: 'module-5',
+      title: 'Реконструкция',
+      description: 'Методы реконструкции после гастрэктомии: Roux-en-Y и интерпозиция тощей кишки.',
+      imageUrl: 'https://static.abacusaicdn.net/images/27619d02-6cd1-41f6-a943-2e5ef53b21cf.png',
+      order: 5,
+      content: {
+        sections: [
+          {
+            id: 'reconstruction-animation',
+            title: 'Анимация методов реконструкции',
+            type: 'interactive',
+            description: 'Сравнение Roux-en-Y и интерпозиции'
+          }
+        ],
+        duration: '2 часа',
+        lessons: 9
+      }
+    },
+    {
+      id: 'module-6',
+      title: 'Лапароскопия и робототехника',
+      description: 'Современные малоинвазивные технологии в хирургии рака желудка.',
+      imageUrl: 'https://static.abacusaicdn.net/images/c5173d87-6bd5-4dcc-b916-0a621be405fa.png',
+      order: 6,
+      content: {
+        sections: [
+          {
+            id: 'robotic-surgery',
+            title: 'Роботическая хирургия da Vinci',
+            type: 'interactive',
+            description: 'Преимущества и техника роботической гастрэктомии'
+          }
+        ],
+        duration: '2.5 часа',
+        lessons: 10
+      }
+    },
+    {
+      id: 'module-7',
+      title: 'Эндоскопия',
+      description: 'Органосохраняющие эндоскопические методики лечения раннего рака (ESD).',
+      imageUrl: 'https://static.abacusaicdn.net/images/fc7e0494-9dfa-4ff9-8bfd-39c44b2c8708.png',
+      order: 7,
+      content: {
+        sections: [
+          {
+            id: 'endoscopy-marking',
+            title: 'Симулятор разметки для ESD',
+            type: 'interactive',
+            description: 'Практика правильной разметки границ опухоли'
+          }
+        ],
+        duration: '2 часа',
+        lessons: 8
+      }
+    },
+    {
+      id: 'module-8',
+      title: 'Мультимодальное лечение',
+      description: 'Протоколы неоадъювантной и адъювантной химиотерапии, таргетная и иммунотерапия.',
+      imageUrl: 'https://static.abacusaicdn.net/images/f141d8a6-ad3f-4605-ab2a-0d92cd82cf6e.png',
+      order: 8,
+      content: {
+        sections: [
+          {
+            id: 'chemotherapy-protocols',
+            title: 'Протоколы химиотерапии',
+            type: 'educational',
+            description: 'FLOT, FOLFOX, XELOX схемы'
+          },
+          {
+            id: 'targeted-therapy',
+            title: 'Таргетная и иммунотерапия',
+            type: 'educational',
+            description: 'Трастузумаб, Пембролизумаб, Ниволумаб'
+          }
+        ],
+        duration: '2.5 часа',
+        lessons: 11
+      }
+    },
+    {
+      id: 'module-9',
+      title: 'Осложнения',
+      description: 'Алгоритмы диагностики и лечения интра- и послеоперационных осложнений.',
+      imageUrl: 'https://static.abacusaicdn.net/images/77a2cde8-8bc2-4e87-ba40-15f18020f8e8.png',
+      order: 9,
+      content: {
+        sections: [
+          {
+            id: 'complications-algorithm',
+            title: 'Алгоритмы управления осложнениями',
+            type: 'educational',
+            description: 'Несостоятельность анастомоза, кровотечение, свищи'
+          }
+        ],
+        duration: '2 часа',
+        lessons: 9
+      }
+    },
+    {
+      id: 'module-10',
+      title: 'Практика',
+      description: 'Мультидисциплинарный разбор сложных случаев и симуляционный тренинг.',
+      imageUrl: 'https://static.abacusaicdn.net/images/6c2f2755-8d75-4050-aa4c-5a572f096a2c.png',
+      order: 10,
+      content: {
+        sections: [
+          {
+            id: 'mdt-cases',
+            title: 'Разбор клинических случаев',
+            type: 'case-study',
+            description: 'Реальные сложные случаи с участием МДК'
+          },
+          {
+            id: 'simulation-training',
+            title: 'Симуляционный тренинг',
+            type: 'practical',
+            description: 'Отработка хирургических навыков'
+          }
+        ],
+        duration: '3 часа',
+        lessons: 12
+      }
+    }
